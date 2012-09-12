@@ -5,7 +5,7 @@ includedir=${INCLUDE_INSTALL_DIR}
 
 Name: TagLib
 Description: Audio meta-data library
-Requires: 
+Requires:  ${STLPORT_PC}
 Version: ${TAGLIB_LIB_MAJOR_VERSION}.${TAGLIB_LIB_MINOR_VERSION}.${TAGLIB_LIB_PATCH_VERSION}
 Libs: -L${LIB_INSTALL_DIR} -ltag
 Cflags: -I${INCLUDE_INSTALL_DIR}/taglib 

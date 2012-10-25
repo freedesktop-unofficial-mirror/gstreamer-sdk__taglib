@@ -24,7 +24,7 @@ if(ENABLE_STATIC)
     set_target_properties(tag_c PROPERTIES COMPILE_DEFINITIONS TAGLIB_STATIC)
 endif(ENABLE_STATIC)
 
-TARGET_LINK_LIBRARIES(tag_c  tag )
+TARGET_LINK_LIBRARIES(tag_c  tag ${GNUSTL_STATIC_LDFLAGS_OTHER})
 
 # On Solaris we need to explicitly add the C++ standard and runtime
 # libraries to the libs used by the C bindings, because those C bindings
